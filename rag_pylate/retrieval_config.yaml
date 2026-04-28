@@ -1,7 +1,7 @@
-data_path: PMC_VQA/
+data_path: ../PMC_VQA/
 images: images/
 test_clean: test_clean_radiology.csv
-documents: umls_datasets/pmc_oa_captions.csv
+documents: ../umls_datasets/pmc_oa_captions.csv
 
 encoder_checkpoint: pmc_clip_utils/checkpoint.pt
 text_encoder: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
