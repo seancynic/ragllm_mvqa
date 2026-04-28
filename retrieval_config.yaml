@@ -1,0 +1,28 @@
+data_path: PMC_VQA/
+images: images/
+test_clean: test_clean_radiology.csv
+documents: umls_datasets/pmc_oa_captions.csv
+
+encoder_checkpoint: pmc_clip_utils/checkpoint.pt
+text_encoder: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+
+question_len: 30
+document_len: 512
+top_k: 10
+
+dataloader:
+  shuffle: false
+  batch_size: 128
+  num_workers: 0
+
+pmc_clip:
+  embed_dim: 768
+  vision_cfg:
+    image_size: 224
+    layers: [3, 4, 6, 3]
+    width: 64
+    patch_size: null
+    head_width: 64
+  text_cfg:
+    bert_model_name: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+    vocab_size: 30522
