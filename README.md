@@ -2,11 +2,11 @@
 
 ## rag_faiss
 
-### Workflow Steps
+### steps:
 
 1.  **Generate Embeddings**
 
-    Use generate_query_embeds.py convert your query data into vector representations.
+    Convert query data into vector representations using generate_query_embeds.py.
 
 3.  **Retrieve Context**
 
