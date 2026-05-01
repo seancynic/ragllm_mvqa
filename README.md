@@ -2,7 +2,17 @@
 
 ## rag_faiss
 
-### steps:
+### preprocess raw umls data:
+
+1.  **Convert to CSV**
+
+    Convert raw umls data to csv file using UMLS.py.
+
+2.  **Preprocess (Data Clean and Selection)**
+
+    Clean and select certain data using preprocess.ipynb.
+
+### ragllm steps:
 
 1.  **Generate Embeddings**
 
